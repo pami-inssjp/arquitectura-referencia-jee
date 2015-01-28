@@ -1,0 +1,11 @@
+<persistence>
+	<persistence-unit name="pami">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<jta-data-source>java:jboss/datasources/ExampleDS</jta-data-source>
+		<class>ar.gob.pami.jboss.model.Model</class>
+		<class>ar.gob.pami.jboss.model.Medicamento</class>
+		<properties>
+			<property name="hbm2ddl.auto" value="create" />
+		</properties>
+	</persistence-unit>
+</persistence>
